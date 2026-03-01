@@ -1,0 +1,14 @@
+{{ $img := .Params.featured_image | compare.Default .Params.hero_image | compare.Default "/images/gohugo-default-sample-hero-image.jpg" }}
+<article class="mb4 bg-white ba b--black-10 br2 overflow-hidden shadow-1">
+  <a href="{{ .RelPermalink }}" class="db">
+    <img src="{{ $img | relURL }}" alt="{{ .Title }}" style="width:100%;height:220px;object-fit:cover;display:block;" />
+  </a>
+  <div class="pa3 pb2">
+    <h2 class="f4 mt0 mb1">
+      <a href="{{ .RelPermalink }}" class="link dark-green dim">
+        {{ .Params.short_title | compare.Default .Title }}
+      </a>
+    </h2>
+    <p class="f7 ttu tracked mid-gray mt0 mb0">Source: {{ .Params.source_name | compare.Default "Unspecified" }}</p>
+  </div>
+</article>

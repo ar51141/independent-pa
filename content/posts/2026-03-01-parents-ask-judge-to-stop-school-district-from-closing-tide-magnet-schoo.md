@@ -7,8 +7,8 @@ draft: true
 author: "The Independent PA Newsroom"
 categories: ["civic"]
 tags: ["visual-first", "palo-alto", "paly"]
-featured_image: "/images/gohugo-default-sample-hero-image.jpg"
-hero_image: "/images/gohugo-default-sample-hero-image.jpg"
+featured_image: "images/gohugo-default-sample-hero-image.jpg"
+hero_image: "images/gohugo-default-sample-hero-image.jpg"
 source_name: "Palo Alto Daily Post"
 source_url: "https://padailypost.com/2026/02/26/parents-ask-judge-to-stop-closing-of-magnet-school/"
 layout: "single"

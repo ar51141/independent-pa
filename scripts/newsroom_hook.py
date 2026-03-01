@@ -88,8 +88,8 @@ def write_post(source: str, item: dict):
         return filename
 
     safe_title = item['title'].replace('"', "'")
-    og_image = fetch_og_image(item['link']) or "/images/gohugo-default-sample-hero-image.jpg"
-    credit = source if og_image != "/images/gohugo-default-sample-hero-image.jpg" else "Photo placeholder (replace with relevant image before publish)"
+    og_image = fetch_og_image(item['link']) or "images/gohugo-default-sample-hero-image.jpg"
+    credit = source if og_image != "images/gohugo-default-sample-hero-image.jpg" else "Photo placeholder (replace with relevant image before publish)"
     content = f'''---
 title: "{safe_title}"
 short_title: "{safe_title[:56]}"

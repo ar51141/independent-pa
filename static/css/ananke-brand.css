@@ -104,3 +104,8 @@ article h2 {
 .page-staff strong {
   color: var(--ipa-deep-green);
 }
+
+/* Remove large hero title banner; keep compact top-left site name in nav */
+header .tc-l.pv3.ph3.ph4-ns {
+  display: none;
+}

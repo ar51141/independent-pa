@@ -7,7 +7,7 @@ draft: false
 author: "The Independent PA Newsroom"
 categories: ["district", "civic"]
 tags: ["pausd", "budget", "paly", "source-summary"]
-featured_image: "/images/posts/600k-exit.jpg"
+featured_image: "images/posts/600k-exit.jpg"
 image_credit: "Ava Knapp / The Paly Voice"
 image_source_url: "https://palyvoice.com/186941/news/school-board-separates-from-superintendent/"
 source_name: "PAUSD BoardDocs + The Paly Voice"

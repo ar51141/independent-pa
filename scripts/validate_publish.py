@@ -6,7 +6,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 POSTS = ROOT / "content" / "posts"
 
-PLACEHOLDER_IMAGE = "/images/gohugo-default-sample-hero-image.jpg"
+PLACEHOLDER_IMAGE = "images/gohugo-default-sample-hero-image.jpg"
 
 
 def parse_frontmatter(text: str):
