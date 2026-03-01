@@ -93,12 +93,12 @@ def write_post(source: str, item: dict):
     content = f'''---
 title: "{safe_title}"
 short_title: "{safe_title[:56]}"
-deck: "Quick, student-readable summary of a new Palo Alto development."
+deck: "Short summary with source links."
 date: {datetime.now(timezone.utc).isoformat()}
 draft: true
 author: "The Independent PA Newsroom"
 categories: ["civic"]
-tags: ["visual-first", "palo-alto", "paly"]
+tags: ["palo-alto", "news", "source-summary"]
 featured_image: "{og_image}"
 image_credit: "{credit}"
 image_source_url: "{item['link']}"
@@ -110,21 +110,15 @@ sources:
 layout: "single"
 ---
 
-## What happened
+## Summary
 
-A major civic update was reported by **{source}**.
+- What happened: [add one short factual sentence]
+- Why it matters: [add one short sentence]
+- What to watch next: [add one short sentence]
 
-## Quick overview
+## Read the full source
 
-This section should summarize the development in 2–4 short, factual sentences.
-
-## Why this matters for Paly students
-
-This section should explain the practical relevance to students in plain language.
-
-## Sources
-
-- {item['link']}
+- [{source}]({item['link']})
 '''
     filename.write_text(content)
     return filename
