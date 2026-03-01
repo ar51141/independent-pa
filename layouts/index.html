@@ -2,13 +2,13 @@
 {{ define "main" }}
 <main class="mw8 center ph3 pb5">
   <section class="pv3 bb b--black-10 mb4">
-    <h1 class="f2 mt0 mb1 ipa-headline">The Independent PA</h1>
+    <h1 class="f1 mt0 mb1 ipa-site-title">The Independent PA</h1>
     <p class="f5 mt0 mb0 ipa-deck">Local reporting, clearly sourced. What happened and what it means.</p>
   </section>
 
   <section class="ipa-grid">
     {{ range where .Site.RegularPages "Section" "posts" }}
-      {{ partial "summary.html" . }}
+      {{ .Render "summary" }}
     {{ end }}
   </section>
 </main>

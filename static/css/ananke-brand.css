@@ -92,3 +92,15 @@ article h2 {
 .ipa-grid article {
   margin-bottom: 0;
 }
+
+.ipa-site-title {
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--ipa-deep-green);
+  letter-spacing: 0.01em;
+}
+
+.page-staff h1,
+.page-staff h2,
+.page-staff strong {
+  color: var(--ipa-deep-green);
+}
