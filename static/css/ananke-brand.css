@@ -49,3 +49,35 @@ article h2 {
 .site-brand {
   letter-spacing: 0.03em;
 }
+
+.ipa-article {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.ipa-kicker {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ipa-slate);
+  margin-bottom: 0.5rem;
+}
+
+.ipa-headline {
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.2;
+  color: var(--ipa-deep-green);
+}
+
+.ipa-deck {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--ipa-slate);
+}
+
+.ipa-body-copy p {
+  margin-bottom: 1rem;
+}
+
+.ipa-sources h2 {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--ipa-deep-green);
+}

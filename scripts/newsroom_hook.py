@@ -87,9 +87,13 @@ author: "The Independent PA Newsroom"
 categories: ["civic"]
 tags: ["visual-first", "palo-alto", "paly"]
 featured_image: "/images/gohugo-default-sample-hero-image.jpg"
-hero_image: "/images/gohugo-default-sample-hero-image.jpg"
+image_credit: "Photo placeholder (replace with relevant image before publish)"
+image_source_url: "{item['link']}"
 source_name: "{source}"
 source_url: "{item['link']}"
+sources:
+  - name: "{source}"
+    url: "{item['link']}"
 layout: "single"
 ---
 
@@ -99,14 +103,11 @@ A major civic update was reported by **{source}**.
 
 ## Quick overview
 
-- Here is the core update in simple terms.
-- Here is what we can confirm right now.
-- Here is what to watch next.
+This section should summarize the development in 2–4 short, factual sentences.
 
-## Paly Student Impact
+## Why this matters for Paly students
 
-- Why this matters to students now.
-- What changes students should expect or track.
+This section should explain the practical relevance to students in plain language.
 
 ## Sources
 

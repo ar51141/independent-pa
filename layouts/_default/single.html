@@ -4,21 +4,25 @@
 
 {{ define "main" }}
   {{ $img := .Params.featured_image | compare.Default .Params.hero_image | compare.Default "/images/gohugo-default-sample-hero-image.jpg" }}
-  <article class="mw7 center ph3 pb5">
-    <header class="mt4 mb3">
-      <h1 class="f2 f1-ns mb2">{{ .Title }}</h1>
-      {{ with .Params.deck }}<p class="f4 mid-gray mt0">{{ . }}</p>{{ end }}
-      <time class="f6 gray">{{ .Date | time.Format "Jan 2, 2006" }}</time>
+  <article class="mw7 center ph3 pb5 ipa-article">
+    <header class="mt4 mb3 ipa-article-header">
+      <p class="ipa-kicker">The Independent PA</p>
+      <h1 class="f2 f1-ns mb2 ipa-headline">{{ .Title }}</h1>
+      {{ with .Params.deck }}<p class="f4 mid-gray mt0 ipa-deck">{{ . }}</p>{{ end }}
+      <p class="f6 gray mv2">By {{ .Params.author | compare.Default "The Independent PA Newsroom" }} · <time>{{ .Date | time.Format "Jan 2, 2006" }}</time></p>
     </header>
 
-    <img src="{{ $img | relURL }}" alt="{{ .Title }}" class="w-100 br2 mb4" style="max-height:420px;object-fit:cover;" />
+    <img src="{{ $img | relURL }}" alt="{{ .Title }}" class="w-100 br2 mb2" style="max-height:460px;object-fit:cover;" />
+    {{ with .Params.image_credit }}
+      <p class="f7 gray mt1 mb4">Photo: {{ . }}{{ with $.Params.image_source_url }} · <a href="{{ . }}" target="_blank" rel="noopener">Source</a>{{ end }}</p>
+    {{ end }}
 
-    <section class="f5 lh-copy mid-gray mb4">
+    <section class="f4 lh-copy black-80 mb4 ipa-body-copy">
       {{ .Content }}
     </section>
 
     {{ if or .Params.source_url .Params.sources }}
-    <section class="mt4 pa3 ba b--black-10 br2 bg-near-white">
+    <section class="mt4 pa3 ba b--black-10 br2 bg-near-white ipa-sources">
       <h2 class="f4 mt0 mb2">Sources</h2>
       <ul class="pl3 mt0 mb0">
         {{ with .Params.source_url }}
