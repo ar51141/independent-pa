@@ -18,14 +18,38 @@ author = 'The Independent PA Newsroom'
   name = 'The Independent PA Newsroom'
   email = 'newsroom@independentpa.local'
 
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+
 [menu]
   [[menu.main]]
     identifier = 'posts'
-    name = 'Posts'
+    name = 'News'
     url = '/posts/'
     weight = 10
+  [[menu.main]]
+    identifier = 'categories'
+    name = 'Categories'
+    url = '/categories/'
+    weight = 20
+  [[menu.main]]
+    identifier = 'staff'
+    name = 'Staff'
+    url = '/staff/'
+    weight = 30
+  [[menu.main]]
+    identifier = 'contact'
+    name = 'Contact'
+    url = '/contact/'
+    weight = 40
   [[menu.main]]
     identifier = 'about'
     name = 'About'
     url = '/about/'
-    weight = 20
+    weight = 50
+  [[menu.main]]
+    identifier = 'policies'
+    name = 'Policies'
+    url = '/policies/'
+    weight = 60

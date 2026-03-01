@@ -8,6 +8,8 @@ fi
 
 msg="$1"
 
+python3 scripts/validate_publish.py
+
 git add .
 git commit -m "$msg"
 git push origin main
