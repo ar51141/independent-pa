@@ -1,0 +1,51 @@
+:root {
+  --ipa-deep-green: #1F4D3A;
+  --ipa-slate: #3E4A59;
+  --ipa-gold: #C9A227;
+  --ipa-ink: #0E1116;
+  --ipa-paper: #F7F6F2;
+}
+
+body, .ipa-body {
+  background: var(--ipa-paper);
+  color: var(--ipa-ink);
+}
+
+.bg-black,
+.bg-near-black {
+  background-color: var(--ipa-deep-green) !important;
+}
+
+a,
+.link {
+  color: var(--ipa-deep-green);
+}
+
+a:hover,
+.link:hover {
+  color: var(--ipa-gold);
+}
+
+.f3.f2-ns.lh-title.mb3,
+.f2.f1-l.fw2.white-90.mb0.lh-title {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+article header h1,
+article h1,
+article h2 {
+  color: var(--ipa-deep-green);
+}
+
+.measure-wide,
+.measure {
+  color: var(--ipa-slate);
+}
+
+.b--moon-gray {
+  border-color: var(--ipa-gold) !important;
+}
+
+.site-brand {
+  letter-spacing: 0.03em;
+}

@@ -1,7 +1,7 @@
 baseURL = 'https://ar51141.github.io/independent-pa/'
 languageCode = 'en-us'
 title = 'The Independent PA'
-theme = 'PaperMod'
+theme = 'ananke'
 
 author = 'The Independent PA Newsroom'
 
@@ -10,25 +10,13 @@ author = 'The Independent PA Newsroom'
 
 [params]
   description = 'Visual-first Palo Alto news for Paly students.'
-  defaultTheme = 'light'
-  ShowReadingTime = true
-  ShowShareButtons = true
-  ShowPostNavLinks = true
-  ShowCodeCopyButtons = true
+  custom_css = ['css/ananke-brand.css']
+  recent_posts_number = 10
+  body_classes = 'ipa-body'
 
-  [params.author]
-    name = 'The Independent PA Newsroom'
-    email = 'newsroom@independentpa.local'
-
-  [params.label]
-    text = 'The Independent PA'
-
-  [params.homeInfoParams]
-    Title = 'The Independent PA'
-    Content = 'What happened. What it means. Visual-first news for Paly students.'
-
-  [params.assets]
-    customCSS = ['css/extended/brand.css']
+[params.author]
+  name = 'The Independent PA Newsroom'
+  email = 'newsroom@independentpa.local'
 
 [menu]
   [[menu.main]]
