@@ -13,6 +13,14 @@ Local preview: http://localhost:1313/independent-pa/
 
 ## Core Commands
 
+### 0) Launch the Newsroom App (menu interface)
+
+```bash
+./scripts/newsroom_app.sh
+```
+
+This gives you a simple control panel in terminal for cycle, preview, publish, and WordPress push.
+
 ### 1) Run newsroom automation cycle
 
 ```bash
