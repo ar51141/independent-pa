@@ -1,11 +1,6 @@
 {{ define "header" }}{{ end }}
 {{ define "main" }}
-<main class="mw8 center ph3 pb5">
-  <section class="pv3 bb b--black-10 mb4">
-    <h1 class="f2 mt0 mb1 ipa-site-title">{{ .Title }}</h1>
-    {{ with .Content }}<div class="f5 ipa-deck">{{ . }}</div>{{ end }}
-  </section>
-
+<main class="mw8 center ph3 pb5 pt3">
   <section class="ipa-grid">
     {{ range .Pages }}
       {{ .Render "summary" }}
