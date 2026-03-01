@@ -141,8 +141,12 @@ def main():
             if item_id in seen:
                 continue
             if is_major(item["title"]):
-                path = write_post(src["name"], item)
-                created.append(str(path))
+                og_image = fetch_og_image(item["link"])
+                if not og_image:
+                    print(f"SKIP (no related image): {item['title']} [{src['name']}]")
+                else:
+                    path = write_post(src["name"], item)
+                    created.append(str(path))
             seen.add(item_id)
 
         state["seen"][src["feed"]] = list(seen)[-2000:]
