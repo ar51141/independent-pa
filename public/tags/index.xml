@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on The Independent PA</title>
+    <link>https://yourname.github.io/independent-pa/tags/</link>
+    <description>Recent content in Tags on The Independent PA</description>
+    <generator>Hugo -- 0.157.0</generator>
+    <language>en-us</language>
+    <managingEditor>newsroom@independentpa.local (The Independent PA Newsroom)</managingEditor>
+    <webMaster>newsroom@independentpa.local (The Independent PA Newsroom)</webMaster>
+    <lastBuildDate>Sun, 01 Mar 2026 19:48:00 +0000</lastBuildDate>
+    <atom:link href="https://yourname.github.io/independent-pa/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Budget</title>
+      <link>https://yourname.github.io/independent-pa/tags/budget/</link>
+      <pubDate>Sun, 01 Mar 2026 19:48:00 +0000</pubDate><author>newsroom@independentpa.local (The Independent PA Newsroom)</author>
+      <guid>https://yourname.github.io/independent-pa/tags/budget/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Paly</title>
+      <link>https://yourname.github.io/independent-pa/tags/paly/</link>
+      <pubDate>Sun, 01 Mar 2026 19:48:00 +0000</pubDate><author>newsroom@independentpa.local (The Independent PA Newsroom)</author>
+      <guid>https://yourname.github.io/independent-pa/tags/paly/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pausd</title>
+      <link>https://yourname.github.io/independent-pa/tags/pausd/</link>
+      <pubDate>Sun, 01 Mar 2026 19:48:00 +0000</pubDate><author>newsroom@independentpa.local (The Independent PA Newsroom)</author>
+      <guid>https://yourname.github.io/independent-pa/tags/pausd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Visual-First</title>
+      <link>https://yourname.github.io/independent-pa/tags/visual-first/</link>
+      <pubDate>Sun, 01 Mar 2026 19:48:00 +0000</pubDate><author>newsroom@independentpa.local (The Independent PA Newsroom)</author>
+      <guid>https://yourname.github.io/independent-pa/tags/visual-first/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

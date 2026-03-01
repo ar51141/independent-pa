@@ -1,0 +1,43 @@
+baseURL = 'https://yourname.github.io/independent-pa/'
+languageCode = 'en-us'
+title = 'The Independent PA'
+theme = 'PaperMod'
+
+author = 'The Independent PA Newsroom'
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  description = 'Visual-first Palo Alto news for Paly students.'
+  defaultTheme = 'light'
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true
+
+  [params.author]
+    name = 'The Independent PA Newsroom'
+    email = 'newsroom@independentpa.local'
+
+  [params.label]
+    text = 'The Independent PA'
+
+  [params.homeInfoParams]
+    Title = 'The Independent PA'
+    Content = 'What happened. What it means. Visual-first news for Paly students.'
+
+  [params.assets]
+    customCSS = ['css/extended/brand.css']
+
+[menu]
+  [[menu.main]]
+    identifier = 'posts'
+    name = 'Posts'
+    url = '/posts/'
+    weight = 10
+  [[menu.main]]
+    identifier = 'about'
+    name = 'About'
+    url = '/about/'
+    weight = 20
