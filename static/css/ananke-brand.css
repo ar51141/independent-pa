@@ -93,6 +93,30 @@ article h2 {
   margin-bottom: 0;
 }
 
+.ipa-card {
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+  border-color: #dfe4ea;
+}
+
+.ipa-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(15, 25, 35, 0.12);
+  border-color: var(--ipa-gold);
+}
+
+.ipa-card-image-wrap {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: #e9edf1;
+}
+
+.ipa-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .ipa-site-title {
   font-family: Georgia, "Times New Roman", serif;
   color: var(--ipa-deep-green);
@@ -105,7 +129,22 @@ article h2 {
   color: var(--ipa-deep-green);
 }
 
+/* Add life: subtle gradient strip + warmer cards */
+main[role="main"] {
+  background: linear-gradient(180deg, #f5f8f5 0%, #f7f6f2 40%, #f7f6f2 100%);
+}
+
+.ipa-grid {
+  gap: 1.25rem;
+}
+
 /* Remove large hero title banner; keep compact top-left site name in nav */
-header .tc-l.pv3.ph3.ph4-ns {
-  display: none;
+header .tc-l.pv3.ph3.ph4-ns,
+header .tc-l.pv4.pv6-l.ph3.ph4-ns,
+header .pv6-l,
+header .pv4 {
+  display: none !important;
+  height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
