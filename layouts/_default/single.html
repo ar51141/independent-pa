@@ -1,6 +1,4 @@
-{{ define "header" }}
-  {{ partials.Include "page-header.html" . }}
-{{ end }}
+{{ define "header" }}{{ end }}
 
 {{ define "main" }}
   {{ $img := .Params.featured_image | compare.Default .Params.hero_image | compare.Default "/images/gohugo-default-sample-hero-image.jpg" }}

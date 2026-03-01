@@ -68,6 +68,17 @@ def is_major(title: str) -> bool:
     return len(words & MAJOR_KEYWORDS) > 0
 
 
+def fetch_og_image(url: str) -> str:
+    try:
+        html = fetch(url).decode("utf-8", "ignore")
+        m = re.search(r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)', html, flags=re.I)
+        if not m:
+            m = re.search(r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image["\']', html, flags=re.I)
+        return m.group(1).strip() if m else ""
+    except Exception:
+        return ""
+
+
 def write_post(source: str, item: dict):
     POSTS_DIR.mkdir(parents=True, exist_ok=True)
     date = datetime.now().strftime("%Y-%m-%d")
@@ -77,6 +88,8 @@ def write_post(source: str, item: dict):
         return filename
 
     safe_title = item['title'].replace('"', "'")
+    og_image = fetch_og_image(item['link']) or "/images/gohugo-default-sample-hero-image.jpg"
+    credit = source if og_image != "/images/gohugo-default-sample-hero-image.jpg" else "Photo placeholder (replace with relevant image before publish)"
     content = f'''---
 title: "{safe_title}"
 short_title: "{safe_title[:56]}"
@@ -86,8 +99,8 @@ draft: true
 author: "The Independent PA Newsroom"
 categories: ["civic"]
 tags: ["visual-first", "palo-alto", "paly"]
-featured_image: "/images/gohugo-default-sample-hero-image.jpg"
-image_credit: "Photo placeholder (replace with relevant image before publish)"
+featured_image: "{og_image}"
+image_credit: "{credit}"
 image_source_url: "{item['link']}"
 source_name: "{source}"
 source_url: "{item['link']}"

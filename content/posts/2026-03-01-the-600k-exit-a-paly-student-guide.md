@@ -7,8 +7,8 @@ draft: false
 author: "The Independent PA Newsroom"
 categories: ["district", "civic"]
 tags: ["pausd", "budget", "paly"]
-featured_image: "/images/gohugo-default-sample-hero-image.jpg"
-image_credit: "Representative district governance image"
+featured_image: "https://palyvoice.com/wp-content/uploads/2026/02/Untitled-6-6.jpg"
+image_credit: "The Paly Voice"
 image_source_url: "https://palyvoice.com/186941/news/school-board-separates-from-superintendent/"
 source_name: "District reporting roundup"
 source_url: "https://palyvoice.com/186941/news/school-board-separates-from-superintendent/"
