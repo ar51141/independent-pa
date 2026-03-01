@@ -1,11 +1,14 @@
 ---
 title: "Parents ask judge to stop school district from closing Tide magnet school"
+short_title: "School Closure Lawsuit"
+deck: "A legal challenge to a district school-closure decision."
 date: 2026-03-01T19:50:35.467486+00:00
 draft: true
 author: "The Independent PA Newsroom"
 categories: ["civic"]
 tags: ["visual-first", "palo-alto", "paly"]
-hero_image: "/images/placeholders/hero-news.jpg"
+featured_image: "/images/gohugo-default-sample-hero-image.jpg"
+hero_image: "/images/gohugo-default-sample-hero-image.jpg"
 source_name: "Palo Alto Daily Post"
 source_url: "https://padailypost.com/2026/02/26/parents-ask-judge-to-stop-closing-of-magnet-school/"
 layout: "single"

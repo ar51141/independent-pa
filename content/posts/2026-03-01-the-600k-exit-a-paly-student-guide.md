@@ -1,12 +1,16 @@
 ---
 title: "The $600k Exit: A Paly Student Guide"
+short_title: "$600k Exit Explained"
+deck: "What happened, what we know, and what to watch next."
 date: 2026-03-01T19:48:00Z
 draft: false
 author: "The Independent PA Newsroom"
 categories: ["district", "civic"]
 tags: ["pausd", "visual-first", "budget", "paly"]
-hero_image: "/images/placeholders/hero-600k-exit.jpg"
+featured_image: "/images/gohugo-default-sample-hero-image.jpg"
+hero_image: "/images/gohugo-default-sample-hero-image.jpg"
 source_name: "District reporting roundup"
+source_url: "https://palyvoice.com/186941/news/school-board-separates-from-superintendent/"
 layout: "single"
 ---
 

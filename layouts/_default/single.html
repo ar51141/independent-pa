@@ -1,0 +1,34 @@
+{{ define "header" }}
+  {{ partials.Include "page-header.html" . }}
+{{ end }}
+
+{{ define "main" }}
+  {{ $img := .Params.featured_image | compare.Default .Params.hero_image | compare.Default "/images/gohugo-default-sample-hero-image.jpg" }}
+  <article class="mw7 center ph3 pb5">
+    <header class="mt4 mb3">
+      <h1 class="f2 f1-ns mb2">{{ .Title }}</h1>
+      {{ with .Params.deck }}<p class="f4 mid-gray mt0">{{ . }}</p>{{ end }}
+      <time class="f6 gray">{{ .Date | time.Format "Jan 2, 2006" }}</time>
+    </header>
+
+    <img src="{{ $img | relURL }}" alt="{{ .Title }}" class="w-100 br2 mb4" style="max-height:420px;object-fit:cover;" />
+
+    <section class="f5 lh-copy mid-gray mb4">
+      {{ .Content }}
+    </section>
+
+    {{ if or .Params.source_url .Params.sources }}
+    <section class="mt4 pa3 ba b--black-10 br2 bg-near-white">
+      <h2 class="f4 mt0 mb2">Sources</h2>
+      <ul class="pl3 mt0 mb0">
+        {{ with .Params.source_url }}
+          <li><a href="{{ . }}" target="_blank" rel="noopener">Primary source</a></li>
+        {{ end }}
+        {{ range .Params.sources }}
+          <li><a href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a></li>
+        {{ end }}
+      </ul>
+    </section>
+    {{ end }}
+  </article>
+{{ end }}
