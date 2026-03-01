@@ -1,0 +1,16 @@
+# Hugo build output
+public/
+resources/_gen/
+.hugo_build.lock
+
+# Local env/data
+.env
+.env.*
+.DS_Store
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Logs/state
+*.log
